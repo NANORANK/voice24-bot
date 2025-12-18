@@ -30,7 +30,7 @@ function createMainEmbed() {
         .setColor(0x66FF66)
         .setDescription(`
 **╭・<a:emoji_2:1449148118690959440> : ตั้งค่าข้อมูลการออนช่องเสียง
-︱・<a:green_butterfly:1387145825607745628> : จัดการการออนช่องเสียง
+︱・<a:emoji_34:1450185227577196780> : จัดการการออนช่องเสียง
 ╰・<a:emoji_10:1449150901628440767> : กด เริ่มออน เพื่อเริ่มออนช่องเสียง**
 `)
         .setImage('https://cdn.discordapp.com/attachments/1373361712123740405/1407015471261159586/Register_-_Login.gif?ex=68a490c5&is=68a33f45&hm=777d07bd79d9574157bbd263b3fb1c373e2c08b758f1faf13d9b5ec867c2e17a&')
