@@ -26,12 +26,12 @@ const voiceReconnectData = new Map();
 
 function createMainEmbed() {
     const embed = new EmbedBuilder()
-        .setTitle('<a:Ribbon_Green:1387150881992216628> : ระบบออนช่องเสียง Discord')
+        .setTitle('<a:emoji_1:1449147958091055236> : ระบบออนช่องเสียง Discord')
         .setColor(0x66FF66)
         .setDescription(`
-**╭・<a:greenpoofheart:1387148116591120568> : ตั้งค่าข้อมูลการออนช่องเสียง
+**╭・<a:emoji_2:1449148118690959440> : ตั้งค่าข้อมูลการออนช่องเสียง
 ︱・<a:green_butterfly:1387145825607745628> : จัดการการออนช่องเสียง
-╰・<a:green_wand:1387150750865555507> : กด เริ่มออน เพื่อเริ่มออนช่องเสียง**
+╰・<a:emoji_10:1449150901628440767> : กด เริ่มออน เพื่อเริ่มออนช่องเสียง**
 `)
         .setImage('https://cdn.discordapp.com/attachments/1373361712123740405/1407015471261159586/Register_-_Login.gif?ex=68a490c5&is=68a33f45&hm=777d07bd79d9574157bbd263b3fb1c373e2c08b758f1faf13d9b5ec867c2e17a&')
         .setFooter({
@@ -45,7 +45,7 @@ function createMainEmbed() {
                 .setCustomId('manage_voice')
                 .setLabel('꒰ จัดการออนช่องเสียง ꒱')
                 .setStyle(ButtonStyle.Success)
-                .setEmoji('<a:Ribbon_Green:1387150881992216628>'),
+                .setEmoji('<a:emoji_1:1449147958091055236>'),
             new ButtonBuilder()
                 .setCustomId('setup_voice_config')
                 .setLabel('꒰ ตั้งค่าข้อมูล ꒱')
@@ -80,7 +80,7 @@ function createVoiceManagementUI(userId, user) {
     const isConnected = activeVoiceConnections.has(userId);
     
     const embed = new EmbedBuilder()
-        .setTitle('<a:greenpoofheart:1387148116591120568> : จัดการออนช่องเสียง')
+        .setTitle('<a:emoji_2:1449148118690959440> : จัดการออนช่องเสียง')
         .setDescription(
         `**\`\`\`` +
         `สถานะปัจจุบัน: ${isConnected ? '✅ เชื่อมต่ออยู่' : '❌ ไม่ได้เชื่อมต่อ'}` +
@@ -96,7 +96,7 @@ function createVoiceManagementUI(userId, user) {
                 .setCustomId('start_voice')
                 .setLabel('꒰ เริ่มออน ꒱')
                 .setStyle(ButtonStyle.Success)
-                .setEmoji('<a:green_cycle:1403018466562408658>')
+                .setEmoji('<a:emoji_34:1450185227577196780>')
                 .setDisabled(isConnected),
             new ButtonBuilder()
                 .setCustomId('stop_voice')
@@ -111,7 +111,7 @@ function createVoiceManagementUI(userId, user) {
 
 function createLoadingUI(user) {
     const embed = new EmbedBuilder()
-        .setTitle('<a:greenpoofheart:1387148116591120568> : จัดการออนช่องเสียง')
+        .setTitle('<a:UNV24:1449040312617144465> : จัดการออนช่องเสียง')
         .setDescription('**```สถานะปัจจุบัน: 🔄 กำลังเชื่อมต่อ...```**')
         .setColor(0xFFFF00)
         .setThumbnail(user.displayAvatarURL({ dynamic: true }))
@@ -124,7 +124,7 @@ function createLoadingUI(user) {
                 .setCustomId('start_voice')
                 .setLabel('꒰ เริ่มออน ꒱')
                 .setStyle(ButtonStyle.Success)
-                .setEmoji('<a:green_cycle:1403018466562408658>')
+                .setEmoji('<a:emoji_19:1449151254189314150>')
                 .setDisabled(true),
             new ButtonBuilder()
                 .setCustomId('stop_voice')
